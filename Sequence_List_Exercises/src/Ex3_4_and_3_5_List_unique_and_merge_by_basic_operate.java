@@ -2,7 +2,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class List_unique_and_merge_by_basic_operate {
+public class Ex3_4_and_3_5_List_unique_and_merge_by_basic_operate {
+    //潜在改进：使用find方法？
     //取交集
     public static ArrayList<Integer> unique(ArrayList<Integer> l1, ArrayList<Integer> l2){
         ArrayList<Integer> l3 = new ArrayList<Integer>();

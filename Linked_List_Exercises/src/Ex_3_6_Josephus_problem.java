@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class Josephus_problem {
+public class Ex_3_6_Josephus_problem {
     //关键：实现循环链表
     public static void main(String args[]) {
         Simple_circle_linkedList<Integer> people = new Simple_circle_linkedList<Integer>();
