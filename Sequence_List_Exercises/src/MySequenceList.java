@@ -1,5 +1,6 @@
 import javafx.beans.binding.ObjectExpression;
 
+import java.io.*;
 import java.lang.reflect.Array;
 import java.util.*;
 
@@ -138,7 +139,7 @@ public class MySequenceList<Type> implements Iterable<Type> {
         }
         @Override
         public boolean hasPrevious() {
-            return elements[currentIndex--]!=null;
+            return elements[currentIndex-1]!=null;
         }
 
         @Override
@@ -188,7 +189,7 @@ public class MySequenceList<Type> implements Iterable<Type> {
         private int currentIndex = size-1;
         @Override
         public boolean hasNext() {
-            return currentIndex!=0;
+            return currentIndex>=0;
         }
 
         @Override
@@ -198,19 +199,28 @@ public class MySequenceList<Type> implements Iterable<Type> {
         }
     }
 
-    public static void main(String args[]){
+    public static void main(String args[]) throws IOException {
+        String path ="./test.txt";
+        File filename = new File(path); // 要读取以上路径的input。txt文件
+        InputStreamReader reader = new InputStreamReader(new FileInputStream(filename)); // 建立一个输入流对象reader
+        BufferedReader br = new BufferedReader(reader); // 建立一个对象，它把文件内容转成计算机能读懂的语言
+        String line = "";
+        line = br.readLine();
         MySequenceList list = new MySequenceList();
         //插入元素
-        for(int i = 1; i<=100; i++){
-            list.add(i);
+        for(String s:line.split(",")){
+            list.add(Integer.parseInt(s));
         }
-
         System.out.println("Add numbers from 1 to 100,and insert a big number at the second place");
-        list.add(1,2134763);
+        list.add(1,Integer.parseInt(br.readLine()));
         System.out.println(Arrays.toString(list.elements));
+
+
         //查找并获取元素
         System.out.println("Get the fifth element:");
         System.out.println(list.get(4));
+
+
         //删除元素
         System.out.println("Remove the second element:");
         list.remove(1);
@@ -218,13 +228,18 @@ public class MySequenceList<Type> implements Iterable<Type> {
         System.out.println("Remove the element,whose value is 10,by finding element's index:");
         list.remove_by_element(10);
         System.out.println(Arrays.toString(list.elements));
-        System.out.println("The example of addAll():");
+
+        //传入数组实现添加的addAll()方法
+        line = br.readLine();
+        System.out.println("The example of addAll(),add an array from 100 to 95:");
         ArrayList<Integer> items=new ArrayList<Integer>();
-        for (int i =1;i<6;i++){
-            items.add(i);
+        for (String s:line.split(",")){
+            items.add(Integer.parseInt(s));
         }
         list.addAll(items);
         System.out.println(Arrays.toString(list.elements));
+
+        //反向迭代演示
         System.out.println("Testing the reverseIterator:");
         Iterator ritr = list.reverseIterator();
         while(ritr.hasNext()) System.out.println(ritr.next());

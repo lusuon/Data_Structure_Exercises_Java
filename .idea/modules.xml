@@ -5,7 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/../JavaWebAppDemo/JavaWebAppDemo.iml" filepath="$PROJECT_DIR$/../JavaWebAppDemo/JavaWebAppDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/Linked_List_Exercises/Linked_List_Exercises.iml" filepath="$PROJECT_DIR$/Linked_List_Exercises/Linked_List_Exercises.iml" />
       <module fileurl="file://$PROJECT_DIR$/Sequence_List_Exercises/Sequence_List_Exercises.iml" filepath="$PROJECT_DIR$/Sequence_List_Exercises/Sequence_List_Exercises.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Stack_Exercises/src/src.iml" filepath="$PROJECT_DIR$/Stack_Exercises/src/src.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Stack_Exercises/Stack_Exercises/Stack_Exercises.iml" filepath="$PROJECT_DIR$/Stack_Exercises/Stack_Exercises/Stack_Exercises.iml" />
     </modules>
   </component>
 </project>
