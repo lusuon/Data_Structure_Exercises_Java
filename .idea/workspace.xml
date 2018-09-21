@@ -7,31 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02268f71-5a63-4774-b101-e63cd50e44a8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Linked_List_Exercises/src/Ex_3_2_Change_link_to_swap_element_in_single_link.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Linked_List_Exercises/src/SingleLinkedListWithHeader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sequence_List_Exercises/src/SpareMatrix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stack_Exercises/Stack_Exercises/src/Ex3_21_Valid_Symbol_Check.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Linked_List_Exercises/src/Change_link_to_swap_element_in_single_link.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Linked_List_Exercises/src/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/Linked_List_Exercises/src/MyLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Linked_List_Exercises/src/Simple_single_linkedList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sequence_List_Exercises/src/MySequenceList.java" beforeDir="false" afterPath="$PROJECT_DIR$/Sequence_List_Exercises/src/MySequenceList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stack_Exercises/src/src.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Stack_Exercises/Stack_Exercises/Stack_Exercises.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stack_Exercises/src/src/Ex3_22_Postfix_calculate.java" beforeDir="false" afterPath="$PROJECT_DIR$/Stack_Exercises/Stack_Exercises/src/Ex3_22_Postfix_calculate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stack_Exercises/src/src/Ex3_23_infix_and_postfix.java" beforeDir="false" afterPath="$PROJECT_DIR$/Stack_Exercises/Stack_Exercises/src/Ex3_23_infix_and_postfix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stack_Exercises/src/src/Ex3_24_Two_stack_in_one_array.java" beforeDir="false" afterPath="$PROJECT_DIR$/Stack_Exercises/Stack_Exercises/src/Ex3_24_Two_stack_in_one_array.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artifacts/JavaWebAppDemo_war_exploded/WEB-INF/classes/HeaderServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/artifacts/JavaWebAppDemo_war_exploded/WEB-INF/classes/HeaderServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/production/Linked_List_Exercises/Change_link_to_swap_element_in_single_link.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/production/Linked_List_Exercises/MyLinkedList$MyLinkedListIterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/production/Linked_List_Exercises/MyLinkedList$MyLinkedListIterator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/production/Linked_List_Exercises/MyLinkedList$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/production/Linked_List_Exercises/MyLinkedList$Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/production/Linked_List_Exercises/MyLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/production/Linked_List_Exercises/MyLinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/production/Linked_List_Exercises/Simple_single_linkedList$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/production/Linked_List_Exercises/Simple_single_linkedList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/production/Sequence_List_Exercises/MySequenceList$MySequenceListIterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/production/Sequence_List_Exercises/MySequenceList$MySequenceListIterator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/production/Sequence_List_Exercises/MySequenceList$MySequenceListListIterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/production/Sequence_List_Exercises/MySequenceList$MySequenceListListIterator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/production/Sequence_List_Exercises/MySequenceList$MySequenceListReverseIterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/production/Sequence_List_Exercises/MySequenceList$MySequenceListReverseIterator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/production/Sequence_List_Exercises/MySequenceList.class" beforeDir="false" afterPath="$PROJECT_DIR$/production/Sequence_List_Exercises/MySequenceList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Linked_List_Exercises/src/SingleLinkedListWithHeader.java" beforeDir="false" afterPath="$PROJECT_DIR$/Linked_List_Exercises/src/SingleLinkedListWithHeader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/production/src/Ex3_22_Postfix_calculate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/production/src/Ex3_23_infix_and_postfix.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/production/src/Ex3_24_Two_stack_in_one_array.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -105,14 +85,33 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-1430459051">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="1327" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="1327" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sequence_List_Exercises/src/MySequenceList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="233" column="79" selection-start-line="233" selection-start-column="79" selection-end-line="233" selection-end-column="79" />
+            <state relative-caret-position="883">
+              <caret line="244" column="62" lean-forward="true" selection-start-line="202" selection-start-column="8" selection-end-line="244" selection-end-column="62" />
               <folding>
                 <element signature="method#MySequenceList#0;class#MySequenceList#0" />
                 <element signature="method#ensureCapacity#0;class#MySequenceList#0" />
@@ -127,7 +126,6 @@
                 <element signature="method#previous#0;class#MySequenceListListIterator#0;class#MySequenceList#0" />
                 <element signature="method#add#0;class#MySequenceListListIterator#0;class#MySequenceList#0" />
                 <element signature="class#MySequenceListReverseIterator#0;class#MySequenceList#0" />
-                <element signature="e#6277#6286#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -136,8 +134,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Linked_List_Exercises/src/MyLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+            <state relative-caret-position="449">
+              <caret line="216" lean-forward="true" selection-start-line="216" selection-end-line="219" selection-end-column="5" />
               <folding>
                 <element signature="method#clear#0;class#MyLinkedList#0" />
                 <element signature="method#contains#0;class#MyLinkedList#0" />
@@ -155,17 +153,22 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Linked_List_Exercises/src/SingleLinkedListWithHeader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="57" column="5" lean-forward="true" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+            <state relative-caret-position="380">
+              <caret line="64" column="5" lean-forward="true" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="class#Node#0;class#SingleLinkedListWithHeader#0" />
                 <element signature="method#Node#0;class#Node#0;class#SingleLinkedListWithHeader#0" />
                 <element signature="method#getNode#0;class#SingleLinkedListWithHeader#0" />
-                <element signature="e#404#405#0" expanded="true" />
-                <element signature="e#432#433#0" expanded="true" />
-                <element signature="e#472#473#0" expanded="true" />
-                <element signature="e#499#500#0" expanded="true" />
+                <element signature="method#clear#0;class#SingleLinkedListWithHeader#0" />
+                <element signature="method#add#0;class#SingleLinkedListWithHeader#0" />
+                <element signature="method#remove#0;class#SingleLinkedListWithHeader#0" />
+                <element signature="e#2298#2299#0" expanded="true" />
+                <element signature="e#2357#2358#0" expanded="true" />
+                <element signature="e#2562#2563#0" expanded="true" />
+                <element signature="e#2607#2608#0" expanded="true" />
+                <element signature="e#2946#2947#0" expanded="true" />
+                <element signature="e#3010#3011#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -214,10 +217,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Linked_List_Exercises/src/MyLinkedList.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/Linked_List_Exercises/src/SingleLinkedListWithHeader.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/Sequence_List_Exercises/src/MySequenceList.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/Sequence_List_Exercises/src/Ex3_4_and_3_5_List_unique_and_merge_by_basic_operate.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/Linked_List_Exercises/src/MyLinkedList.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -249,9 +252,9 @@
         <option value="$PROJECT_DIR$/../JavaWebAppDemo/src/ShowGetQueryInfoServlet.java" />
         <option value="$PROJECT_DIR$/Stack_Exercises/src/src/Ex3_21_Valid_Symbol_Check.java" />
         <option value="$PROJECT_DIR$/Sequence_List_Exercises/src/EffectiveStringIndex.java" />
-        <option value="$PROJECT_DIR$/Linked_List_Exercises/src/MyLinkedList.java" />
         <option value="$PROJECT_DIR$/Linked_List_Exercises/src/SingleLinkedList_OnlyHead.java" />
         <option value="$PROJECT_DIR$/Sequence_List_Exercises/src/MySequenceList.java" />
+        <option value="$PROJECT_DIR$/Linked_List_Exercises/src/MyLinkedList.java" />
         <option value="$PROJECT_DIR$/Linked_List_Exercises/src/SingleLinkedListWithHeader.java" />
       </list>
     </option>
@@ -270,9 +273,9 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-11" />
+    <option name="x" value="-12" />
     <option name="width" value="1100" />
-    <option name="height" value="1391" />
+    <option name="height" value="1392" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -323,8 +326,8 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/54234/Documents/GitHub/Data_Structure_Exercises_Java/Sequence_List_Exercises/src/List_unique_and_merge_by_basic_operate.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537517211593" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../NEU_JavaWebProjet" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537538310816" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -506,14 +509,15 @@
       <workItem from="1537410312370" duration="7526000" />
       <workItem from="1537449536936" duration="29000" />
       <workItem from="1537491510725" duration="8286000" />
+      <workItem from="1537532740254" duration="5101000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127234000" />
+    <option name="totallyTimeSpent" value="132335000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1455" height="935" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.493007" weight="0.58625627" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -615,11 +619,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="58" column="29" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#swap_single#0;class#Ex_3_2_Change_link_to_swap_element_in_single_link#0" />
-            <element signature="method#swap_double#0;class#Ex_3_2_Change_link_to_swap_element_in_single_link#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -655,36 +654,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2112">
           <caret line="136" column="1" selection-start-line="136" selection-start-column="1" selection-end-line="136" selection-end-column="1" />
-          <folding>
-            <element signature="method#printList#0;class#Simple_circle_linkedList#0" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Linked_List_Exercises/Linked_List_Exercises.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Linked_List_Exercises/src/MyLinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
-          <folding>
-            <element signature="method#clear#0;class#MyLinkedList#0" />
-            <element signature="method#contains#0;class#MyLinkedList#0" />
-            <element signature="method#set#0;class#MyLinkedList#0" />
-            <element signature="method#remove#1;class#MyLinkedList#0" />
-            <element signature="method#removeAll#0;class#MyLinkedList#0" />
-            <element signature="method#getNode#0;class#MyLinkedList#0" />
-            <element signature="class#MyLinkedListIterator#0;class#MyLinkedList#0" />
-            <element signature="method#print#0;class#MyLinkedList#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sequence_List_Exercises/src/MySequenceList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="233" column="79" selection-start-line="233" selection-start-column="79" selection-end-line="233" selection-end-column="79" />
+        <state relative-caret-position="883">
+          <caret line="244" column="62" lean-forward="true" selection-start-line="202" selection-start-column="8" selection-end-line="244" selection-end-column="62" />
           <folding>
             <element signature="method#MySequenceList#0;class#MySequenceList#0" />
             <element signature="method#ensureCapacity#0;class#MySequenceList#0" />
@@ -699,24 +678,45 @@
             <element signature="method#previous#0;class#MySequenceListListIterator#0;class#MySequenceList#0" />
             <element signature="method#add#0;class#MySequenceListListIterator#0;class#MySequenceList#0" />
             <element signature="class#MySequenceListReverseIterator#0;class#MySequenceList#0" />
-            <element signature="e#6277#6286#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Linked_List_Exercises/src/MyLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="216" lean-forward="true" selection-start-line="216" selection-end-line="219" selection-end-column="5" />
+          <folding>
+            <element signature="method#clear#0;class#MyLinkedList#0" />
+            <element signature="method#contains#0;class#MyLinkedList#0" />
+            <element signature="method#set#0;class#MyLinkedList#0" />
+            <element signature="method#remove#1;class#MyLinkedList#0" />
+            <element signature="method#removeAll#0;class#MyLinkedList#0" />
+            <element signature="method#getNode#0;class#MyLinkedList#0" />
+            <element signature="class#MyLinkedListIterator#0;class#MyLinkedList#0" />
+            <element signature="method#print#0;class#MyLinkedList#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Linked_List_Exercises/src/SingleLinkedListWithHeader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="57" column="5" lean-forward="true" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+        <state relative-caret-position="380">
+          <caret line="64" column="5" lean-forward="true" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="class#Node#0;class#SingleLinkedListWithHeader#0" />
             <element signature="method#Node#0;class#Node#0;class#SingleLinkedListWithHeader#0" />
             <element signature="method#getNode#0;class#SingleLinkedListWithHeader#0" />
-            <element signature="e#404#405#0" expanded="true" />
-            <element signature="e#432#433#0" expanded="true" />
-            <element signature="e#472#473#0" expanded="true" />
-            <element signature="e#499#500#0" expanded="true" />
+            <element signature="method#clear#0;class#SingleLinkedListWithHeader#0" />
+            <element signature="method#add#0;class#SingleLinkedListWithHeader#0" />
+            <element signature="method#remove#0;class#SingleLinkedListWithHeader#0" />
+            <element signature="e#2298#2299#0" expanded="true" />
+            <element signature="e#2357#2358#0" expanded="true" />
+            <element signature="e#2562#2563#0" expanded="true" />
+            <element signature="e#2607#2608#0" expanded="true" />
+            <element signature="e#2946#2947#0" expanded="true" />
+            <element signature="e#3010#3011#0" expanded="true" />
           </folding>
         </state>
       </provider>
