@@ -26,6 +26,5 @@ public class Ex3_21_Valid_Symbol_Check {
         }else{
             System.out.println(true);
         }
-
     }
 }

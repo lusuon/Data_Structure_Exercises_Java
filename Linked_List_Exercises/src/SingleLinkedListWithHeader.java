@@ -34,7 +34,8 @@ public class SingleLinkedListWithHeader<Type> implements Iterable<Type>{
     }
     public Node getNode(int index){
         Node<Type> pointer = head.next;
-        if (index<0||index>size){
+        if(index == -1) return head;
+        if (index<-1||index>size){
             throw new IndexOutOfBoundsException();
         }
         for(int i = 0;i<index;i++){
@@ -137,8 +138,8 @@ public class SingleLinkedListWithHeader<Type> implements Iterable<Type>{
     public void printList(){
         Node<Type> pointer = head.next;
         while(pointer.next != null){
-            System.out.println(pointer.data);
-            System.out.println("->");
+            System.out.print(pointer.data);
+            System.out.print("->");
             pointer = pointer.next;
         }
         System.out.println(pointer.data);
@@ -163,42 +164,31 @@ public class SingleLinkedListWithHeader<Type> implements Iterable<Type>{
         BufferedReader br = new BufferedReader(reader); // 建立一个对象，它把文件内容转成计算机能读懂的语言
         String line = "";
         line = br.readLine();
-        MySequenceList list = new MySequenceList();
+        SingleLinkedListWithHeader list = new SingleLinkedListWithHeader();
+
+
         //插入元素
         for(String s:line.split(",")){
             list.add(Integer.parseInt(s));
         }
-        System.out.println("Add numbers from 1 to 100,and insert a big number at the second place");
+        System.out.println("Add numbers from 1 to 10,and insert a big number at the second place");
         list.add(1,Integer.parseInt(br.readLine()));
-        System.out.println(Arrays.toString(list.elements));
+        list.printList();
 
 
         //查找并获取元素
         System.out.println("Get the fifth element:");
-        System.out.println(list.get(4));
+        System.out.println(list.getNode(4).getData());
 
 
         //删除元素
         System.out.println("Remove the second element:");
         list.remove(1);
-        System.out.println(Arrays.toString(list.elements));
-        System.out.println("Remove the element,whose value is 10,by finding element's index:");
-        list.remove_by_element(10);
-        System.out.println(Arrays.toString(list.elements));
+        list.printList();
 
-        //传入数组实现添加的addAll()方法
-        line = br.readLine();
-        System.out.println("The example of addAll(),add an array from 100 to 95:");
-        ArrayList<Integer> items=new ArrayList<Integer>();
-        for (String s:line.split(",")){
-            items.add(Integer.parseInt(s));
-        }
-        list.addAll(items);
-        System.out.println(Arrays.toString(list.elements));
-
-        //反向迭代演示
+        //迭代演示
         System.out.println("Testing the reverseIterator:");
-        Iterator ritr = list.reverseIterator();
-        while(ritr.hasNext()) System.out.println(ritr.next());
+        Iterator itr = list.iterator();
+        while(itr.hasNext()) System.out.println(itr.next());
     }
 }
