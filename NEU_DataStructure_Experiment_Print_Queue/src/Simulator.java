@@ -1,5 +1,3 @@
-package Ex1_Print_Queue;
-
 import java.io.*;
 
 
@@ -20,8 +18,8 @@ import java.io.*;
  * This class should provide a member function "loadWorkLoad" to load the printing event data from corresponding files.
  */
 public class Simulator {
-    private int seconds_per_page; //determines how long a print job takes to print
-    private Queue_NotPriority<Event> workload;
+    int seconds_per_page; //determines how long a print job takes to print
+    Queue_NotPriority<Event> workload;
     int time = 0;
     int events = 0;
     int finish_count = -1;
@@ -40,7 +38,8 @@ public class Simulator {
     //load the printing event data from corresponding files
     public Queue_NotPriority loadWorkLoad() throws IOException {
         //Initialize the workload queue
-        Queue_NotPriority<Event> workload = new Queue_NotPriority<>();
+        Queue_NotPriority<Event> workload = new Queue_NotPriority<Event>();
+        //MinHeap<Event> workload = new MinHeap<Event>();
 
         //Input the filename
         System.out.println("Enter the filename you want to open.");
@@ -57,9 +56,9 @@ public class Simulator {
             String user = infos[2];
             int pages = Integer.parseInt(infos[1]);
             int arrival_time = Integer.parseInt(infos[0]);
-            System.out.println("user:"+user);
-            System.out.println("pages:"+Integer.toString(pages));
-            System.out.println("arrival time:"+Integer.toString(arrival_time));
+            //System.out.println("user:"+user);
+            //System.out.println("pages:"+Integer.toString(pages));
+            //System.out.println("arrival time:"+Integer.toString(arrival_time));
             Event event = new Event(new Job(user,pages),arrival_time);
             workload.enQueue(event);
             line = br.readLine();

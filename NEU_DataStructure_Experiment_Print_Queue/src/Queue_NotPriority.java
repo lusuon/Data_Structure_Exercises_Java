@@ -1,6 +1,5 @@
-package Ex1_Print_Queue;
-
 import java.util.NoSuchElementException;
+
 
 public class Queue_NotPriority<T> {
     public class Node<T>{
@@ -38,32 +37,30 @@ public class Queue_NotPriority<T> {
             prev = p;
             next = n;
         }
-    }
+    }//存储工作信息的节点
 
-    public Node front;
+    public Node front;//队首
     public Node rear;//队尾
-    public int size;
+    public int size;//队列的大小
 
     public Queue_NotPriority(){
         rear = new Node<T>(null,null,null);
         front = new Node<T>(null,rear,null);
         rear.next = front;
         size = 0;
-    }
+    }//构造器
 
     public boolean isEmpty(){
-        return rear.next == front;//Wrong!
-    }
+        return rear.next == front;
+    }//判断是否为空
 
-
-    //队首队尾必须为空结点
     public void enQueue(Node<T> n){
         n.next = rear.next;
         rear.next = n;
         n.prev = rear;
         n.next.prev = n;
         size++;
-    }
+    }//入队，保证队首队尾必须为空结点
 
     public void enQueue(T d){
         enQueue(new Node<T>(d));
@@ -80,11 +77,10 @@ public class Queue_NotPriority<T> {
         front.prev = front.prev.prev;
         size--;
         return pop;
-    }
+    }//出队，并返回被出队的元素
 
     public void printQueue(){
         Node p = rear;
-        //System.out.print("Logical rear:");
         while(p.next != null){
             System.out.print(p.data);
             System.out.print("->");
@@ -93,7 +89,7 @@ public class Queue_NotPriority<T> {
         //System.out.print("Logical front:");
         System.out.println(p.data);
         System.out.println("");
-    }
+    }//打印出队列的内容
 
     public static void main(String args[]){
         Queue_NotPriority<Integer> test = new Queue_NotPriority<Integer>();

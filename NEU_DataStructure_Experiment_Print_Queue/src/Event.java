@@ -1,9 +1,7 @@
-package Ex1_Print_Queue;
-
 /**
  * Write the class Event, which represents a submitted printing event and should have the following 2 data members: "job j" and "int arrival_time".
  */
-public class Event {
+public class Event implements Comparable<Event>{
     private Job j;
     private int arrival_time;
 
@@ -32,4 +30,7 @@ public class Event {
         System.out.println(this.j.getUser()+","+this.j.getNumber_of_pages()+","+this.arrival_time);
     }
 
+    public int compareTo(Event another) {
+        return this.getJ().getNumber_of_pages()-another.getJ().getNumber_of_pages();
+    }
 }

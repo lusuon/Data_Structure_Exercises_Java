@@ -1,5 +1,3 @@
-package Ex1_Print_Queue;
-
 /**
  * Write the class Job, which represents a printing job and should have the following 2 data members: "string user" and "int number_of_pages".
  */

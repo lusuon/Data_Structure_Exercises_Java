@@ -1,5 +1,3 @@
-package Ex1_Print_Queue;
-
 /**
  * Write a class Fifo which is a subclass of Simulator appropriately to model the following relationship: a fifo is a type of simulator.
  * Next, define a method "simulate" to implement the simulation as described above.
@@ -32,7 +30,7 @@ public class Fifo extends Simulator{
         while(!workload.isEmpty() || !arrived.isEmpty()){
             System.out.println("Current time:"+time);
             Event currentEvent = (Event)workload.front.getPrev().getData();
-            if(currentEvent!=null && time >= currentEvent.getArrival_time()){
+            while(currentEvent!=null && time >= currentEvent.getArrival_time()){
                 System.out.println("Processing event,the user is:"+currentEvent.getJ().getUser());
                 currentEvent.printEvent();
                 Event arrivedEvent = workload.deQueue().getData();
@@ -46,6 +44,7 @@ public class Fifo extends Simulator{
                     init = false;
                     latency+=time;
                 }
+                currentEvent = (Event)workload.front.getPrev().getData();//保证全部处理同一时间内所有事件
             }
             //每打印1P，耗费1时间，弹出该任务前，其他皆等待
             //弹出条件是？尝试倒数到0？正在处理的任务减去时间？
