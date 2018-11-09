@@ -36,10 +36,11 @@ public class Simulator {
 
 
     //load the printing event data from corresponding files
-    public Queue_NotPriority loadWorkLoad() throws IOException {
+    public Queue_NotPriority<Event> loadWorkLoad() throws IOException {
         //Initialize the workload queue
         Queue_NotPriority<Event> workload = new Queue_NotPriority<Event>();
-        //MinHeap<Event> workload = new MinHeap<Event>();
+        //MinHeap<Event> workload = new MinHeap<Event>(10);
+
 
         //Input the filename
         System.out.println("Enter the filename you want to open.");
@@ -51,6 +52,7 @@ public class Simulator {
         //Data enqueuing
         String line = "";
         line = br.readLine();
+        //System.out.println(workload);
         while (line != null) {
             String [] infos = line.split(" ");
             String user = infos[2];
@@ -66,6 +68,40 @@ public class Simulator {
         //return workload;
         return workload;
     }
+
+    public MinHeap<Event> loadWorkLoad_MinHeap()throws IOException {
+        //Initialize the workload queue
+        //Queue_NotPriority<Event> workload = new Queue_NotPriority<Event>();
+        MinHeap<Event> workload = new MinHeap<Event>(10);
+
+
+        //Input the filename
+        System.out.println("Enter the filename you want to open.");
+        BufferedReader fnbr = new BufferedReader(new InputStreamReader(System.in));
+        File filename = new File(fnbr.readLine());
+        InputStreamReader reader = new InputStreamReader(new FileInputStream(filename));
+        BufferedReader br = new BufferedReader(reader);
+
+        //Data enqueuing
+        String line = "";
+        line = br.readLine();
+        //System.out.println(workload);
+        while (line != null) {
+            String [] infos = line.split(" ");
+            String user = infos[2];
+            int pages = Integer.parseInt(infos[1]);
+            int arrival_time = Integer.parseInt(infos[0]);
+            //System.out.println("user:"+user);
+            //System.out.println("pages:"+Integer.toString(pages));
+            //System.out.println("arrival time:"+Integer.toString(arrival_time));
+            Event event = new Event(new Job(user,pages),arrival_time);
+            workload.enQueue(event);
+            line = br.readLine();
+        }
+        //return workload;
+        return workload;
+    }
+
     public static void createTxt(String Filename,String content){
         try { // 防止文件建立或读取失败，用catch捕捉错误并打印，也可以throw
             /* 写入Txt文件 */

@@ -15,11 +15,12 @@ import java.io.*;
  * 另一个Queue <event>对象存储“到达”的打印作业。当程序模拟其他工作的打印时，这些工作在此队列中等待。因此，您可能希望将此对象命名为等待或类似的名称.
  */
 
-public class Fifo extends Simulator{
+public class Small_First extends Simulator{
 
     public void simulate() throws IOException {
-        Queue_NotPriority<Event> workload = loadWorkLoad();
-        //MinHeap<Event> workload = loadWorkLoad();
+        //Queue_NotPriority<Event> workload = loadWorkLoad();
+        MinHeap<Event> workload = loadWorkLoad_MinHeap();
+
 
         Queue_NotPriority<Event> arrived = new Queue_NotPriority<Event>();
         StringBuilder sb = new StringBuilder();
@@ -28,20 +29,24 @@ public class Fifo extends Simulator{
 
         Boolean init = true;
         //workload.printQueue();
-        sb.append("FIFO Simulation\r\n\r\n\t");
+        sb.append("Small first Simulation\r\n\r\n\t");
 
         while(!workload.isEmpty() || !arrived.isEmpty()){
             System.out.println("Current time:"+time);
-            Event currentEvent = (Event)workload.front.getPrev().getData();
-            //Event currentEvent = workload.top();
 
-            while(currentEvent!=null && time >= currentEvent.getArrival_time()){
+            //
+            Event currentEvent = workload.top();//待办任务
+
+            while(workload.size!=0 && time >= currentEvent.getArrival_time()){
                 System.out.println("Processing event,the user is:"+currentEvent.getJ().getUser());
                 currentEvent.printEvent();
-                Event arrivedEvent = workload.deQueue().getData();
-                //Event arrivedEvent = workload.deQueue();
+
+
+                //
+                Event arrivedEvent = workload.deQueue();
                 arrived.enQueue(arrivedEvent);
-                //打印receive
+
+                //
                 sb.append("Arriving: "+Integer.toString(arrivedEvent.getJ().getNumber_of_pages())+" page(s) from "+arrivedEvent.getJ().getUser()+" at "+ time +" seconds\r\n\t");
                 latency-=time;
                 if(init){
@@ -50,10 +55,12 @@ public class Fifo extends Simulator{
                     init = false;
                     latency+=time;
                 }
-                currentEvent = (Event)workload.front.getPrev().getData();//保证全部处理同一时间内所有事件
-                //currentEvent = workload.top();
+
+                //
+                currentEvent = workload.top();
 
             }
+
             //每打印1P，耗费1时间，弹出该任务前，其他皆等待
             //弹出条件是？尝试倒数到0？正在处理的任务减去时间？
             if(finish_count == 0) {
@@ -71,18 +78,18 @@ public class Fifo extends Simulator{
             if (finish_count>0) finish_count--;
         }
 
-        // the latency var are not define yet. 
+        // the latency var are not define yet.
         sb.append("\r\n\tTotal jobs:"+Integer.toString(events)+"\r\n\t");
         sb.append("Aggregate latency:"+ Integer.toString(latency) +" seconds\r\n\t");
         sb.append("Mean latency:"+ Integer.toString(latency/events) +" seconds");
-        createTxt("FIFO",sb.toString());
+        createTxt("Small_first",sb.toString());
     }
 
 
     public static void main(String args[]){
-        Fifo fifo = new Fifo();
+        Small_First sm = new Small_First();
         try{
-        fifo.simulate();
+            sm.simulate();
         }catch (Exception e){
             e.printStackTrace();
         }

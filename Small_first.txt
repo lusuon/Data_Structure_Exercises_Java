@@ -1,0 +1,20 @@
+Small first Simulation
+
+	Arriving: 1 page(s) from aardvark at 5 seconds
+	Servicing: 1 page(s) from aardvark at 5 seconds
+	Arriving: 1 page(s) from herring at 6 seconds
+	Arriving: 2 page(s) from platypus at 6 seconds
+	Arriving: 2 page(s) from falcon at 7 seconds
+	Arriving: 50 page(s) from dolphin at 7 seconds
+	Arriving: 75 page(s) from aardvark at 7 seconds
+	Arriving: 75 page(s) from aardvark at 7 seconds
+	Servicing: 1 page(s) from herring at 7 seconds
+	Servicing: 2 page(s) from platypus at 9 seconds
+	Servicing: 2 page(s) from falcon at 13 seconds
+	Servicing: 50 page(s) from dolphin at 17 seconds
+	Servicing: 75 page(s) from aardvark at 117 seconds
+	Servicing: 75 page(s) from aardvark at 267 seconds
+	
+	Total jobs:7
+	Aggregate latency:390 seconds
+	Mean latency:55 seconds

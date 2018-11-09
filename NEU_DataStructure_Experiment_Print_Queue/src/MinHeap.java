@@ -1,74 +1,137 @@
 import java.util.NoSuchElementException;
 
-public class MinHeap<T> {
-    Event[] elements;//存放堆内元素的数组
-    int size;//堆的大小
-    private static final int defaultSize=10;
+public class MinHeap<T extends Comparable<? super T>> {
+    private static final int DEFAULT_CAPACITY = 10;
 
-    //最小堆的实现
-    public void makeEmpty(){
-        size = 0;
+    int size;      // Number of elements in heap
+    T [] elements; // The heap elements
+
+    //创建默认大小的最小堆
+    public MinHeap()
+    {
+        this( DEFAULT_CAPACITY );
     }
-    public boolean isEmpty(){return size==0;}
-    public boolean isFull(){return size==elements.length;}
 
-    public MinHeap(int maxSize){
-        int length = defaultSize<maxSize ? maxSize:defaultSize;
-        elements = (Event[]) new Object[length];
-        size=0;
-    }//构造器
+    /**
+     * 创建指定大小的最小堆
+     * @param capacity  最小堆的容量..
+     */
+    public MinHeap(int capacity )
+    {
+        size = 0;
+        elements = (T[]) new Comparable[capacity + 1];
+    }
 
-    public void enQueue(Event x){
-        if(size==elements.length){
-            //堆已满拓展或抛出异常
-            Event[] oldList = elements;
-            elements = (Event[]) new Object[size*2+1];
-            for (int i = 0; i < size; i++) {
-                elements[i] = oldList[i];
-            }
-        }
-        elements[size]=x;
-        filterUp(size);//上滤
-        size++;
-    }//入队，并在堆内排序
+    /**
+     * 根据给定未排序数组构建堆
+     */
+    public MinHeap(T [ ] items )
+    {
+        size = items.length;
+        elements = (T[]) new Comparable[ ( size + 2 ) * 11 / 10 ];
 
-    public void filterUp(int start){
-        int j =start;
-        int i =(j-1)/2;//parent
-        Event temp = elements[j];
-        while(j>0){
-            if(temp.compareTo(elements[i])>0)break;//比较优先级
-            else{
-                elements[j] = elements[i];
-                j=i;
-                i=(i=1)/2;
-            }
-        }
-        elements[j] =temp;
-    }//最小堆内元素上滤操作
+        int i = 1;
+        for( T item : items )
+            elements[ i++ ] = item;
+        //此时堆未形成，逐个地对中间节点进行下滤
+        buildHeap( );
+    }
 
-    public Event deQueue(){
-        if(size == 0) throw new NoSuchElementException();
-        //比较路径上
-        Event pop = elements[0];
-        elements[0] = elements[size-1];
+    /**
+     * 维持堆序性质的同时进行插入
+     * 使用标记，允许重复
+     * @param x 待插入的元素
+     */
+    public void enQueue(T x){
+        if( size == elements.length - 1 )
+            enlargeArray( elements.length * 2 + 1 );
+
+        int hole = size++;// 看作在最底新创建一个叶节点
+        for(elements[0]=x;x.compareTo(elements[hole/2])<0; hole/=2)//第0号索引充当temp存放位置
+            elements[hole] = elements[hole/2];//如果父节点优先级低，其值下滤到“空”的子节点
+        elements[hole] = x;
+    }
+
+    /**
+     * 扩容，同顺序表
+     * @param newSize
+     */
+    private void enlargeArray(int newSize){
+        T [] old = elements;
+        elements = (T []) new Comparable[newSize];
+        for( int i = 0; i < old.length; i++ )
+            elements[i] = old[i];
+    }
+
+    /**
+     * 找到最小元素，注意，第0位为temp空间
+     * @return 返回最小元素，如果没有则返回空
+     */
+    public T findMin(){
+        if(isEmpty())
+            throw new NoSuchElementException();
+        return elements[1];
+    }
+
+    /**
+     * 删除最小元素/出队
+     * @return the smallest item, or throw an NoSuchElementException if empty.
+     */
+    public T deQueue(){
+        if(isEmpty()) throw new NoSuchElementException( );
+
+        T pop = findMin();
         size--;
-        filterDown(0,size-1);
-        return pop;
-    }//优先级最低队尾元素出队
+        elements[1] = elements[size];
 
-    public void filterDown(int start ,int endOfHeap){
-        int i =start, j=2*i+1;
-        Event temp = elements[i];
-        while(j<=endOfHeap){
-            if(j<endOfHeap && elements[j].compareTo(elements[j+1])<0 ) j++;//elements[j].key>elements[j+1].key
-            if(temp.compareTo(elements[j])>=0) break;//temp.key <= elements[j].key
-            else{
-                elements[i]=elements[j];
-                i=j;
-                j=2*j+1;
+        //此时堆序性质可能遭到破坏，对中间节点逐个进行下滤
+        percolateDown(1);
+        return pop;
+    }
+
+    /**
+     * 将无序数组建堆
+     * 线性时间复杂度
+     */
+    private void buildHeap( ){
+        //size-2为最后一个中继节点
+        for(int i=size/2;i>0;i--) percolateDown(i);
+    }
+
+    /**
+     * 判断堆是否为空
+     * @return 空为true，否则false
+     */
+    public boolean isEmpty(){
+        return size == 0;
+    }
+
+    /**
+     * 使队列逻辑上为空
+     */
+    public void makeEmpty(){size = 0;}
+
+    /**
+     * 对元素进行下滤
+     * @param hole 开始下滤的位置
+     */
+    private void percolateDown(int hole){
+        int child;
+        T temp = elements[hole];
+
+        for(;hole*2 <= size;hole = child)
+        {
+            child = hole*2;
+            if(child != size && elements[child + 1].compareTo(elements[child]) < 0)
+                child++;
+            if(elements[child].compareTo(temp) < 0){
+                elements[hole] = elements[child];
+            }else {
+                break;
             }
         }
-        elements[i] = temp;
-    }//最小堆内元素下滤操作
+        elements[hole] = temp;
+    }
+
+    public T top(){return elements[1];}
 }

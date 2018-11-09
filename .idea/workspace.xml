@@ -7,19 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02268f71-5a63-4774-b101-e63cd50e44a8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NEU_DataStructure_Experiment_Print_Queue/src/Small_First.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FIFO.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FIFO.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NEU_DataStructure_Experiment/NEU_DataStructure_Experiment.iml" beforeDir="false" afterPath="$PROJECT_DIR$/NEU_DataStructure_Experiment_Print_Queue/NEU_DataStructure_Experiment_Print_Queue.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NEU_DataStructure_Experiment/src/Ex1_Print_Queue/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/NEU_DataStructure_Experiment_Print_Queue/src/Event.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NEU_DataStructure_Experiment/src/Ex1_Print_Queue/Fifo.java" beforeDir="false" afterPath="$PROJECT_DIR$/NEU_DataStructure_Experiment_Print_Queue/src/Fifo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NEU_DataStructure_Experiment/src/Ex1_Print_Queue/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/NEU_DataStructure_Experiment_Print_Queue/src/Job.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NEU_DataStructure_Experiment/src/Ex1_Print_Queue/MinHeap.java" beforeDir="false" afterPath="$PROJECT_DIR$/NEU_DataStructure_Experiment_Print_Queue/src/MinHeap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NEU_DataStructure_Experiment/src/Ex1_Print_Queue/Queue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NEU_DataStructure_Experiment/src/Ex1_Print_Queue/Queue_NotPriority.java" beforeDir="false" afterPath="$PROJECT_DIR$/NEU_DataStructure_Experiment_Print_Queue/src/Queue_NotPriority.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NEU_DataStructure_Experiment/src/Ex1_Print_Queue/Simulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/NEU_DataStructure_Experiment_Print_Queue/src/Simulator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NEU_DataStructure_Experiment/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/NEU_DataStructure_Experiment_Print_Queue/src/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NEU_DataStructure_Experiment_Print_Queue/src/Fifo.java" beforeDir="false" afterPath="$PROJECT_DIR$/NEU_DataStructure_Experiment_Print_Queue/src/Fifo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NEU_DataStructure_Experiment_Print_Queue/src/MinHeap.java" beforeDir="false" afterPath="$PROJECT_DIR$/NEU_DataStructure_Experiment_Print_Queue/src/MinHeap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NEU_DataStructure_Experiment_Print_Queue/src/Simulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/NEU_DataStructure_Experiment_Print_Queue/src/Simulator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/production/NEU_DataStructure_Experiment_Print_Queue/Fifo.class" beforeDir="false" afterPath="$PROJECT_DIR$/production/NEU_DataStructure_Experiment_Print_Queue/Fifo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/production/NEU_DataStructure_Experiment_Print_Queue/MinHeap.class" beforeDir="false" afterPath="$PROJECT_DIR$/production/NEU_DataStructure_Experiment_Print_Queue/MinHeap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/production/NEU_DataStructure_Experiment_Print_Queue/Simulator.class" beforeDir="false" afterPath="$PROJECT_DIR$/production/NEU_DataStructure_Experiment_Print_Queue/Simulator.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -135,16 +131,18 @@
     <session id="1780001623">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.12" value="1" />
+          <entry key="project.closed" value="7" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.12" value="3" />
+          <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1007" />
+          <entry key="JAVA" value="2560" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -153,21 +151,21 @@
       <usages-collector id="statistics.spring.boot.mvc.usages" />
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="11" />
-          <entry key="PLAIN_TEXT" value="8" />
+          <entry key="JAVA" value="16" />
+          <entry key="PLAIN_TEXT" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="11" />
-          <entry key="out" value="3" />
-          <entry key="run" value="4" />
-          <entry key="txt" value="1" />
+          <entry key="java" value="16" />
+          <entry key="out" value="4" />
+          <entry key="run" value="6" />
+          <entry key="txt" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1007" />
+          <entry key="java" value="2560" />
         </counts>
       </usages-collector>
     </session>
@@ -175,45 +173,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/arbitrary.out">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="16" lean-forward="true" selection-start-column="16" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FIFO.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="50" lean-forward="true" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
+            <state relative-caret-position="247">
+              <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/arbitrary.run">
+        <entry file="file://$PROJECT_DIR$/bigfirst.run">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="76">
-              <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+              <caret line="4" column="8" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NEU_DataStructure_Experiment_Print_Queue/src/Queue_NotPriority.java">
+        <entry file="file://$PROJECT_DIR$/Small_first.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="39" column="14" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
-              <folding>
-                <element signature="class#Node#0;class#Queue_NotPriority#0" />
-                <element signature="method#Queue_NotPriority#0;class#Queue_NotPriority#0" />
-                <element signature="method#enQueue#0;class#Queue_NotPriority#0" />
-                <element signature="method#enQueue#1;class#Queue_NotPriority#0" />
-                <element signature="method#deQueue#0;class#Queue_NotPriority#0" />
-                <element signature="method#printQueue#0;class#Queue_NotPriority#0" />
-              </folding>
+            <state relative-caret-position="114">
+              <caret line="6" column="48" lean-forward="true" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -221,25 +202,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NEU_DataStructure_Experiment_Print_Queue/src/MinHeap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-133">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="206">
+              <caret line="84" selection-start-line="84" selection-end-line="84" />
               <folding>
-                <element signature="method#MinHeap#0;class#MinHeap#0" />
-                <element signature="method#deQueue#0;class#MinHeap#0" />
-                <element signature="method#filterDown#0;class#MinHeap#0" />
+                <element signature="method#enlargeArray#0;class#MinHeap#0" />
+                <element signature="e#2421#2422#0" expanded="true" />
+                <element signature="e#2453#2454#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/NEU_DataStructure_Experiment_Print_Queue/src/Simulator.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NEU_DataStructure_Experiment_Print_Queue/src/Small_First.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="41" column="57" lean-forward="true" selection-start-line="41" selection-start-column="57" selection-end-line="41" selection-end-column="57" />
+            <state relative-caret-position="197">
+              <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
               <folding>
-                <element signature="e#1529#1536#0" expanded="true" />
-                <element signature="method#createTxt#0;class#Simulator#0" />
+                <element signature="n#!!doc" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -248,19 +228,23 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NEU_DataStructure_Experiment_Print_Queue/src/Event.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+            <state relative-caret-position="323">
+              <caret line="33" column="48" lean-forward="true" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
+              <folding>
+                <element signature="e#823#824#0" expanded="true" />
+                <element signature="e#914#915#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NEU_DataStructure_Experiment_Print_Queue/src/Fifo.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/NEU_DataStructure_Experiment_Print_Queue/src/Simulator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="48" column="38" lean-forward="true" selection-start-line="48" selection-start-column="38" selection-end-line="48" selection-end-column="38" />
+            <state relative-caret-position="176">
+              <caret line="99" column="9" lean-forward="true" selection-start-line="99" selection-start-column="9" selection-end-line="99" selection-end-column="9" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
+                <element signature="method#loadWorkLoad#0;class#Simulator#0" />
               </folding>
             </state>
           </provider>
@@ -299,6 +283,11 @@
       <find>Event</find>
       <find>T</find>
       <find>Ex1_Print_Queue.Event</find>
+      <find>pr</find>
+      <find>Processing</find>
+      <find>array</find>
+      <find>currentSize</find>
+      <find>System.</find>
     </findStrings>
     <replaceStrings>
       <replace>int</replace>
@@ -313,6 +302,8 @@
       <replace>T</replace>
       <replace>Ex1_Print_Queue.Event</replace>
       <replace>Event</replace>
+      <replace>elements</replace>
+      <replace>size</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -329,8 +320,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Stack_Exercises/src/src/Ex3_23_infix_and_postfix.java" />
-        <option value="$PROJECT_DIR$/Stack_Exercises/src/src/Two_stack_by_one_array.java" />
         <option value="$PROJECT_DIR$/Stack_Exercises/src/src/Two_stack_in_one_array.java" />
         <option value="$PROJECT_DIR$/Sequence_List_Exercises/src/List_unique_and_merge_by_basic_operate.java" />
         <option value="$PROJECT_DIR$/Sequence_List_Exercises/src/Polynomial_calculate.java" />
@@ -376,10 +365,12 @@
         <option value="$PROJECT_DIR$/NEU_DataStructure_Experiment/src/Ex1_Print_Queue/MinHeap.java" />
         <option value="$PROJECT_DIR$/NEU_DataStructure_Experiment/src/MinHeap.java" />
         <option value="$PROJECT_DIR$/NEU_DataStructure_Experiment_Print_Queue/src/LessFist.java" />
-        <option value="$PROJECT_DIR$/NEU_DataStructure_Experiment_Print_Queue/src/MinHeap.java" />
         <option value="$PROJECT_DIR$/NEU_DataStructure_Experiment_Print_Queue/src/Queue_NotPriority.java" />
         <option value="$PROJECT_DIR$/NEU_DataStructure_Experiment_Print_Queue/src/Fifo.java" />
         <option value="$PROJECT_DIR$/NEU_DataStructure_Experiment_Print_Queue/src/Simulator.java" />
+        <option value="$PROJECT_DIR$/NEU_DataStructure_Experiment_Print_Queue/src/Event.java" />
+        <option value="$PROJECT_DIR$/NEU_DataStructure_Experiment_Print_Queue/src/MinHeap.java" />
+        <option value="$PROJECT_DIR$/NEU_DataStructure_Experiment_Print_Queue/src/Small_First.java" />
       </list>
     </option>
   </component>
@@ -407,7 +398,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -442,14 +433,14 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/54234/Documents/GitHub/Data_Structure_Exercises_Java/Sequence_List_Exercises/src/List_unique_and_merge_by_basic_operate.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541594635613" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541770358124" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -481,7 +472,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Fifo">
+  <component name="RunManager" selected="Application.Small_First">
     <configuration name="Fifo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Fifo" />
       <module name="NEU_DataStructure_Experiment_Print_Queue" />
@@ -491,13 +482,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MySequenceList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MySequenceList" />
-      <module name="Sequence_List_Exercises" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -531,6 +515,13 @@
     <configuration name="SingleLinkedListWithHeader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SingleLinkedListWithHeader" />
       <module name="Linked_List_Exercises" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Small_First" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Small_First" />
+      <module name="NEU_DataStructure_Experiment_Print_Queue" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -657,19 +648,19 @@
     </configuration>
     <list>
       <item itemvalue="Tomcat Server.Tomcat 9.0.11" />
-      <item itemvalue="Application.MySequenceList" />
       <item itemvalue="Application.SingleLinkedListWithHeader" />
       <item itemvalue="Application.Queue_NotPriority" />
       <item itemvalue="Application.Simulator" />
       <item itemvalue="Application.Fifo" />
+      <item itemvalue="Application.Small_First" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Small_First" />
         <item itemvalue="Application.Fifo" />
         <item itemvalue="Application.Queue_NotPriority" />
         <item itemvalue="Application.Simulator" />
         <item itemvalue="Application.SingleLinkedListWithHeader" />
-        <item itemvalue="Application.MySequenceList" />
       </list>
     </recent_temporary>
   </component>
@@ -731,16 +722,30 @@
       <workItem from="1541416575467" duration="669000" />
       <workItem from="1541550165472" duration="4123000" />
       <workItem from="1541561106071" duration="13507000" />
+      <workItem from="1541600072799" duration="657000" />
+      <workItem from="1541635201101" duration="1194000" />
+      <workItem from="1541644270116" duration="1180000" />
+      <workItem from="1541748073941" duration="14344000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="230117000" />
+    <option name="totallyTimeSpent" value="247492000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1381" height="885" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.493007" visible="true" weight="0.21390778" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.493007" visible="true" weight="0.22600152" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -751,13 +756,13 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32841823" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4996421" weight="0.27755645" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997344" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32934928" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5003579" side_tool="true" weight="0.32917705" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.3241895" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.3240372" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Application Servers" order="12" weight="0.33167082" />
@@ -776,7 +781,7 @@
       <window_info anchor="right" id="Coverage" order="11" side_tool="true" weight="0.3288889" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.493007" visible="true" weight="0.4201861" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.493007" visible="true" weight="0.22600152" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -785,15 +790,15 @@
       <window_info id="Capture Tool" order="6" />
       <window_info id="Web" order="7" sideWeight="0.506993" side_tool="true" weight="0.61069834" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32917705" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4996421" visible="true" weight="0.2755611" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32841823" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4996421" visible="true" weight="0.27755645" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5003579" side_tool="true" weight="0.32917705" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.3241895" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.3240372" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Application Servers" order="12" weight="0.33167082" />
@@ -824,22 +829,22 @@
       <path value="$PROJECT_DIR$/ProgrammingAssignment2" />
     </ignored-roots>
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/NEU_DataStructure_Experiment_Print_Queue/src/MinHeap.java</url>
+          <line>84</line>
+          <properties />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Sequence_List_Exercises/src/Ex3_4_and_3_5_List_unique_and_merge_by_basic_operate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Stack_Exercises/Stack_Exercises/src/Ex3_24_Two_stack_in_one_array.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../JavaWebAppDemo/web/WEB-INF/classes/AddServlet.java" />
     <entry file="file://$PROJECT_DIR$/../JavaWebAppDemo/web/WEB-INF/classes/HeaderServlet.java" />
     <entry file="file://$PROJECT_DIR$/../JavaWebAppDemo/src/AddServlet.java" />
     <entry file="file://$PROJECT_DIR$/../JavaWebAppDemo/web/index.jsp" />
@@ -945,9 +950,6 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.base/java/io/BufferedReader.java" />
     <entry file="file://$PROJECT_DIR$/FIFOtxt" />
-    <entry file="file://$PROJECT_DIR$/test.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tree_Exercises/src/MinHeap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -980,23 +982,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NEU_DataStructure_Experiment/src/Queue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" selection-start-column="22" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bigfirst.run">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bigfirst.out">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/NEU_DataStructure_Experiment/src/Queue.java" />
     <entry file="file://$PROJECT_DIR$/NEU_DataStructure_Experiment_Print_Queue/src/LessFist.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -1004,59 +990,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/arbitrary.out">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" lean-forward="true" selection-start-column="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FIFO.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="50" lean-forward="true" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/arbitrary.run">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NEU_DataStructure_Experiment_Print_Queue/src/Event.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NEU_DataStructure_Experiment_Print_Queue/src/Fifo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="48" column="38" lean-forward="true" selection-start-line="48" selection-start-column="38" selection-end-line="48" selection-end-column="38" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NEU_DataStructure_Experiment_Print_Queue/src/MinHeap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-133">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="method#MinHeap#0;class#MinHeap#0" />
-            <element signature="method#deQueue#0;class#MinHeap#0" />
-            <element signature="method#filterDown#0;class#MinHeap#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/NEU_DataStructure_Experiment_Print_Queue/src/Queue_NotPriority.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
+        <state relative-caret-position="19">
           <caret line="39" column="14" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
           <folding>
             <element signature="class#Node#0;class#Queue_NotPriority#0" />
@@ -1069,13 +1005,110 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/arbitrary.run">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bigfirst.out">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/arbitrary.out">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="16" selection-start-column="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NEU_DataStructure_Experiment_Print_Queue/src/Fifo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/Trans/数据结构课件/597066 数据结构与算法分析 java语言描述（原书第3版）/数据结构与算法分析_Java语言描述(第3版)源码/BinaryHeap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#4759#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NEU_DataStructure_Experiment_Print_Queue/src/MinHeap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="84" selection-start-line="84" selection-end-line="84" />
+          <folding>
+            <element signature="method#enlargeArray#0;class#MinHeap#0" />
+            <element signature="e#2421#2422#0" expanded="true" />
+            <element signature="e#2453#2454#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bigfirst.run">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="8" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FIFO.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Small_first.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="48" lean-forward="true" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NEU_DataStructure_Experiment_Print_Queue/src/Event.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="33" column="48" lean-forward="true" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
+          <folding>
+            <element signature="e#823#824#0" expanded="true" />
+            <element signature="e#914#915#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NEU_DataStructure_Experiment_Print_Queue/src/Small_First.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/NEU_DataStructure_Experiment_Print_Queue/src/Simulator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="41" column="57" lean-forward="true" selection-start-line="41" selection-start-column="57" selection-end-line="41" selection-end-column="57" />
+        <state relative-caret-position="176">
+          <caret line="99" column="9" lean-forward="true" selection-start-line="99" selection-start-column="9" selection-end-line="99" selection-end-column="9" />
           <folding>
-            <element signature="e#1529#1536#0" expanded="true" />
-            <element signature="method#createTxt#0;class#Simulator#0" />
+            <element signature="method#loadWorkLoad#0;class#Simulator#0" />
           </folding>
         </state>
       </provider>
