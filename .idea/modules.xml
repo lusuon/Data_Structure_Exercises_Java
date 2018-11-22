@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Linked_List_Exercises/Linked_List_Exercises.iml" filepath="$PROJECT_DIR$/Linked_List_Exercises/Linked_List_Exercises.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NEU_DataStructure_Experiment_EU_Travelling/NEU_DataStructure_Experiment_EU_Travelling.iml" filepath="$PROJECT_DIR$/NEU_DataStructure_Experiment_EU_Travelling/NEU_DataStructure_Experiment_EU_Travelling.iml" />
       <module fileurl="file://$PROJECT_DIR$/NEU_DataStructure_Experiment_Print_Queue/NEU_DataStructure_Experiment_Print_Queue.iml" filepath="$PROJECT_DIR$/NEU_DataStructure_Experiment_Print_Queue/NEU_DataStructure_Experiment_Print_Queue.iml" />
       <module fileurl="file://$PROJECT_DIR$/Sequence_List_Exercises/Sequence_List_Exercises.iml" filepath="$PROJECT_DIR$/Sequence_List_Exercises/Sequence_List_Exercises.iml" />
       <module fileurl="file://$PROJECT_DIR$/Stack_Exercises/Stack_Exercises/Stack_Exercises.iml" filepath="$PROJECT_DIR$/Stack_Exercises/Stack_Exercises/Stack_Exercises.iml" />
