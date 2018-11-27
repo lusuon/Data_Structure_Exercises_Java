@@ -7,39 +7,20 @@ import java.util.*;
 
 public class RailSystem {
     private HashMap<String,City> cityList = new HashMap<>();   //图的顶点集
-    private HashMap<City, List<Service>> ver_edgeList_map = new HashMap<>();  //图的每个顶点对应的有向边
-    public RailSystem() throws IOException {
-        super();
-        ArrayList<Map> r = load();
-        this.cityList = (HashMap<String,City>)r.get(0);
-        this.ver_edgeList_map = (HashMap<City, List<Service>>)r.get(1);
-    }
     public HashMap<String, City> getCityList() {
         return cityList;
     }
-    public void setCityList(HashMap<String,City> cityList) {
-        this.cityList = cityList;
-    }
-    public HashMap<City, List<Service>> getVer_edgeList_map() {
-        return ver_edgeList_map;
-    }
-    public void setVer_edgeList_map(HashMap<City, List<Service>> ver_edgeList_map) {
-        this.ver_edgeList_map = ver_edgeList_map;
-    }
 
 
 
-    public ArrayList<Map> load() throws IOException {
-        ArrayList<Map> loadResult = new ArrayList<>();
-        //用城市作为节点表
-        //ArrayList<String> added = new ArrayList<>();
+    public HashMap<String, City> load() throws IOException {
         String pathname = "services.txt";
         File filename = new File(pathname);
         InputStreamReader reader = new InputStreamReader(new FileInputStream(filename));
         BufferedReader br = new BufferedReader(reader);
         String line = "";
         int id = 0;
-        ArrayList<String> names = new ArrayList<>();
+        ArrayList<String> added = new ArrayList<>();
 
         line = br.readLine();
 
@@ -54,100 +35,105 @@ public class RailSystem {
 
 
             //如果无城市，则添加
-            if (!names.contains(start)||!names.contains(end)) {
-                if (!names.contains(start)) {
-                    names.add(start);
+            if (!added.contains(start)||!added.contains(end)) {
+                if (!added.contains(start)) {
+                    added.add(start);
                     toBeAdd = new City(start);
                     cityList.put(start, toBeAdd);
-                    ver_edgeList_map.put(toBeAdd, new LinkedList<Service>());
                 }
-                if (!names.contains(end)) {
-                    names.add(end);
+                if (!added.contains(end)) {
+                    added.add(end);
                     toBeAdd = new City(end);
                     cityList.put(end, toBeAdd);
-                    ver_edgeList_map.put(toBeAdd, new LinkedList<Service>());
                 }
             }
 
-            ver_edgeList_map.get(cityList.get(start)).add(new Service(cityList.get(start),cityList.get(end),fare,distance));
+            cityList.get(start).getAdj().add(new Service(cityList.get(start),cityList.get(end),fare,distance));
             line = br.readLine();
         }
-            loadResult.add(0,cityList);
-            loadResult.add(1,ver_edgeList_map);
-            return loadResult;
+            return cityList;
     }
 
-    /**
-     *
-     * @param startIndex dijkstra遍历的起点节点下标
-     * @param destIndex dijkstra遍历的终点节点下标
-     */
-    public void dijkstraTravasal(String startName,String destName)	{
-        City start = cityList.get(startName);
-        City dest = cityList.get(destName);
-        String path = "["+dest.getName()+"]";
-        int path_distance = 0;
-        start.setPath(null);
+    public String dijkstra(HashMap<String,City> cityList, String startCity, String endCity){
+        City start = cityList.get(startCity);
+        City end = cityList.get(endCity);
+        int fee;
+        int distance = 0;
+        StringBuilder wholePath = new StringBuilder();
+        if(start==null||end==null) throw new NoSuchElementException();
+        PriorityQueue<City> notKnown = new PriorityQueue<>();
+
         start.setDist(0);
-        updateChildren(start);
-        int shortest_length = dest.getDist();
-        while((dest.getPath()!=null)&&(!dest.equals(start)))	{
-            path = "["+dest.getPath().getName()+"] --> "+path;
-            dest = dest.getPath();
-        }
-        System.out.println("["+cityList.get(startName).getName() +"] to ["+cityList.get(destName).getName()+"] dijkstra shortest path :: "+path);
-        System.out.println("shortest length::"+shortest_length);
-    }
-
-    /**
-     *  从初始节点开始递归更新邻接表
-     *  @param v
-     *  */
-    private void updateChildren(City v)	{
-        if (v==null) {
-            System.out.println("v is null,update aborted");
-            return;
-        }
-        if (ver_edgeList_map.get(v)==null||ver_edgeList_map.get(v).size()==0) {
-            if(ver_edgeList_map.get(v)==null){
-                System.out.println("Can not find the corresponding linkedlist");
-            }else{
-                System.out.println("Empty");
-            }
-            return;
+        //向堆加入所有节点
+        for (Map.Entry<String,City> entry:cityList.entrySet()){
+            notKnown.add(entry.getValue());
         }
 
-        System.out.println("start updating");
-        List<City> childrenList = new LinkedList<City>();
-        for(Service e:ver_edgeList_map.get(v))	{
-            City childCity = e.getGoal();
-            int nowDist = v.getDist()+e.getFee();
-            //如果子节点之前未知，则把当前子节点假如更新列表
-            if(!childCity.isKnown())	{
-                childCity.setKnown(true);
-                childCity.setDist(nowDist);
-                childCity.setPath(v);
-                childrenList.add(childCity);
+        while(notKnown.size()!=0){
+            City smallestDist = notKnown.poll();
+            smallestDist.setKnown(true);
+            for (Service service:smallestDist.getAdj()) {
+                City adj = service.getGoal();
+                if(!adj.isKnown()){
+                    int newDist = smallestDist.getDist()+service.getFee();
+                    if(newDist < adj.getDist()){
+                        //更新adj的路径
+                        adj.setDist(newDist);
+
+                        //刷新adj在优先队列内的位置
+                        notKnown.remove(adj);
+                        notKnown.add(adj);
+
+                        adj.setPath(smallestDist);
+                    }
+                }
             }
-            //子节点之前已知，则比较子节点的ajduDist&&nowDist
-            if(nowDist>=childCity.getDist()){
+        }
+        fee = end.getDist();
+
+        Stack<String> pathStack = new Stack<>();
+        while(end.getPath()!=null){
+            City current = end;
+            end = end.getPath();
+            for(Service s:end.getAdj()){
+                if(s.getGoal()==current){
+                    distance+=s.getDistance();
+                    pathStack.push(s.getGoal().getName());
+                }
+            }
+        }
+        pathStack.push(startCity);
+
+        while(pathStack.size()!=0) {
+            wholePath.append(pathStack.pop());
+            if (pathStack.size()==0) {
                 continue;
-            }else{
-                childCity.setDist(nowDist);
-                childCity.setPath(v);
+            } else {
+                wholePath.append("->");
             }
         }
-        //更新每一个子节点
-        for(City vc:childrenList)	{
-            updateChildren(vc);
-        }
+        return String.format("The smallest cost : %d \n length: %d \n path: %s",fee,distance,wholePath.toString());
     }
 
     public static void main(String args[]) throws IOException {
         RailSystem rs = new RailSystem();
-        rs.dijkstraTravasal("Lisbon","Paris");
+        HashMap<String,City> cityList = rs.load();
 
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        System.out.print("We support the following cities:\n");
 
+        for (Map.Entry<String,City> entry:cityList.entrySet()){
+            System.out.print(entry.getValue().getName()+",");
+        }
+
+        String start = null;
+        String end = null;
+        System.out.println("\nEnter the start point:");
+        start = br.readLine();
+        System.out.println("Enter the goal:");
+        end = br.readLine();
+
+        System.out.println(rs.dijkstra(cityList,start,end));
     }
 }
     
