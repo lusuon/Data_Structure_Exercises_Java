@@ -3,22 +3,37 @@ import java.util.HashMap;
 import java.util.LinkedList;
 
 /**
- * maintains information about a city
+ * Maintains information about a city.
+ * This class can be define as a vertex.
+ *
  */
 
-public class City {
-    String name;
-    LinkedList<Service> services;//adj list
-    boolean known = false;//the status of the shortest path
-    City shorestPathSource = null;//the former of shorset path
-
-
+public class City implements Comparable{
+    private String name;
+    //private LinkedList<Service> services;//adj list
+    private boolean known;//the status of the shortest path
+    private City path ;//the former of shortest path
+    private int dist ;
 
     public City(String n){
         this.name = n;
-        this.services = new LinkedList<Service>();
+        //this.services = new LinkedList<Service>();
+        this.known = false;
+        this.path= null;
+        this.dist= Integer.MAX_VALUE;
     }
 
+    /*
+    public int getFee(String cityName){
+
+        for (Service s:services) {
+            if(s.getGoal().equals(name)) return s.getFee();
+        }
+        return -1;
+    }
+    */
+
+    /*
     public void addService(String g,Integer f,Integer d){
         services.add(new Service(g,f,d));
     }
@@ -26,52 +41,49 @@ public class City {
     public void removeService(Service s){
         services.remove(s);
     }
+    */
 
-
-    public boolean getKnown(){
-        return known;
-    }
-
-    public void setKnown(boolean known){
-        this.known = known;
-    }
-
-    public City getShortesCity(){
-        return shorestPathSource;
-    }
-
-    public void shorestPathSource(City shortestPathSource){
-        this.shortestPathSource = shortestPathSource; 
-    }
-
-
-
-    /**
-     * @return the name
-     */
     public String getName() {
         return name;
     }
-
-    /**
-     * @return the services
-     */
+    /*
     public LinkedList<Service> getServices() {
         return services;
     }
-
-    /**
-     * @param name the name to set
-     */
+    */
     public void setName(String name) {
         this.name = name;
     }
-
-    /**
-     * @param services the services to set
-     */
+    /*
     public void setServices(LinkedList<Service> services) {
         this.services = services;
     }
-    
+    */
+    public boolean isKnown() {
+        return known;
+    }
+    public void setKnown(boolean known) {
+        this.known = known;
+    }
+    public City getPath() {
+        return path;
+    }
+    public void setPath(City path) {
+        this.path = path;
+    }
+    public int getDist() {
+        return dist;
+    }
+    public void setDist(int dist) {
+        this.dist = dist;
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        City otherCity = (City) o;
+        if (this.getDist()-otherCity.getDist()<0) return -1;
+        else if(this.getDist()-otherCity.getDist()>0) return 1;
+        else return 0;
+    }
+
 }
