@@ -1,3 +1,7 @@
+package carManagement;
+
+import carManagement.Car;
+
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
@@ -20,7 +24,9 @@ public class Parking {
     }
 
     public void in(){
+        if(park.size()>=park_space){
 
+        }
     }
 
     public void out(){

@@ -1,3 +1,5 @@
+package carManagement;
+
 public class Car {
     String number;
     int arrive;
