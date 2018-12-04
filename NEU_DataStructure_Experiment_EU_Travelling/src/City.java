@@ -18,9 +18,11 @@ public class City implements Comparable{
     public City(String n){
         this.name = n;
         this.adj = new LinkedList<Service>();
+        /*
         this.known = false;
         this.path= null;
         this.dist= Integer.MAX_VALUE;
+        */
     }
 
     

@@ -6,14 +6,12 @@ import java.util.*;
  */
 
 public class RailSystem {
-    private HashMap<String,City> cityList = new HashMap<>();   //图的顶点集
+    private HashMap<String,City> cityList = new HashMap<>();   //图
+
     public HashMap<String, City> getCityList() {
         return cityList;
     }
-
-
-
-    public HashMap<String, City> load() throws IOException {
+    public HashMap<String, City> load_services() throws IOException {
         String pathname = "services.txt";
         File filename = new File(pathname);
         InputStreamReader reader = new InputStreamReader(new FileInputStream(filename));
@@ -54,21 +52,52 @@ public class RailSystem {
             return cityList;
     }
 
-    public String dijkstra(HashMap<String,City> cityList, String startCity, String endCity){
-        City start = cityList.get(startCity);
-        City end = cityList.get(endCity);
-        int fee;
+    public void reset(HashMap<String,City> cityList){
+        for (Map.Entry<String,City> entry:cityList.entrySet()){
+            entry.getValue().setDist(Integer.MAX_VALUE);
+            entry.getValue().setKnown(false);
+            entry.getValue().setPath(null);
+        }
+    }
+    public String recover_route(HashMap<String,City> cityList,String start,String end){
         int distance = 0;
+        City startCity = cityList.get(start);
+        City endCity = cityList.get(end);
+        int fee = endCity.getDist();
         StringBuilder wholePath = new StringBuilder();
-        if(start==null||end==null) throw new NoSuchElementException();
-        PriorityQueue<City> notKnown = new PriorityQueue<>();
+        if(endCity.getPath()==null) return "Can not reach.";
 
-        start.setDist(0);
+        Stack<String> pathStack = new Stack<>();
+        while(endCity.getPath()!=null){
+            City current = endCity;
+            endCity = endCity.getPath();
+            for(Service s:endCity.getAdj()){
+                if(s.getGoal()==current){
+                    distance+=s.getDistance();
+                    pathStack.push(s.getGoal().getName());
+                }
+            }
+        }
+        pathStack.push(start);
+        while(pathStack.size()!=0) {
+            wholePath.append(pathStack.pop());
+            if (pathStack.size()==0) {
+                continue;
+            } else {
+                wholePath.append(" to ");
+            }
+        }
+        return String.format("The smallest cost : %d \n length: %d \n path: %s",fee,distance,wholePath.toString());
+    }
+    public void calc_route(HashMap<String,City> cityList, String start){
+        City startCity = cityList.get(start);
+        if(start==null) throw new NoSuchElementException();
+        PriorityQueue<City> notKnown = new PriorityQueue<>();
+        startCity.setDist(0);
         //向堆加入所有节点
         for (Map.Entry<String,City> entry:cityList.entrySet()){
             notKnown.add(entry.getValue());
         }
-
         while(notKnown.size()!=0){
             City smallestDist = notKnown.poll();
             smallestDist.setKnown(true);
@@ -89,51 +118,27 @@ public class RailSystem {
                 }
             }
         }
-        fee = end.getDist();
-
-        Stack<String> pathStack = new Stack<>();
-        while(end.getPath()!=null){
-            City current = end;
-            end = end.getPath();
-            for(Service s:end.getAdj()){
-                if(s.getGoal()==current){
-                    distance+=s.getDistance();
-                    pathStack.push(s.getGoal().getName());
-                }
-            }
-        }
-        pathStack.push(startCity);
-
-        while(pathStack.size()!=0) {
-            wholePath.append(pathStack.pop());
-            if (pathStack.size()==0) {
-                continue;
-            } else {
-                wholePath.append("->");
-            }
-        }
-        return String.format("The smallest cost : %d \n length: %d \n path: %s",fee,distance,wholePath.toString());
     }
 
     public static void main(String args[]) throws IOException {
         RailSystem rs = new RailSystem();
-        HashMap<String,City> cityList = rs.load();
+        HashMap<String,City> cityList = rs.load_services();
+        rs.reset(cityList);
 
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.print("We support the following cities:\n");
-
         for (Map.Entry<String,City> entry:cityList.entrySet()){
             System.out.print(entry.getValue().getName()+",");
         }
 
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String start = null;
         String end = null;
-        System.out.println("\nEnter the start point:");
+        System.out.println("\nEnter the start:");
         start = br.readLine();
         System.out.println("Enter the goal:");
         end = br.readLine();
-
-        System.out.println(rs.dijkstra(cityList,start,end));
+        rs.calc_route(cityList,start);
+        System.out.println(rs.recover_route(cityList,start,end));
     }
 }
     
