@@ -7,14 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02268f71-5a63-4774-b101-e63cd50e44a8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/NEU_DataStructure_Course_Design/src/Calculate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NEU_DataStructure_Course_Design/src/Graph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NEU_DataStructure_Course_Design/src/Road.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NEU_DataStructure_Course_Design/src/Scenery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NEU_DataStructure_Course_Design/src/carManagement/CarStack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NEU_DataStructure_Course_Design/src/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/NEU_DataStructure_Course_Design/src/carManagement/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NEU_DataStructure_Course_Design/src/Parking.java" beforeDir="false" afterPath="$PROJECT_DIR$/NEU_DataStructure_Course_Design/src/carManagement/Parking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NEU_DataStructure_Course_Design/src/Calculate.java" beforeDir="false" afterPath="$PROJECT_DIR$/NEU_DataStructure_Course_Design/src/Calculate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NEU_DataStructure_Course_Design/src/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/NEU_DataStructure_Course_Design/src/Graph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NEU_DataStructure_Course_Design/src/carManagement/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/NEU_DataStructure_Course_Design/src/carManagement/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NEU_DataStructure_Course_Design/src/carManagement/Parking.java" beforeDir="false" afterPath="$PROJECT_DIR$/NEU_DataStructure_Course_Design/src/carManagement/Parking_lot.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -141,23 +139,24 @@
     <session id="1780001623">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="16" />
+          <entry key="project.closed" value="17" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="5" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.15" value="1" />
-          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.16" value="2" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="16" />
+          <entry key="project.opened" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="9678" />
+          <entry key="JAVA" value="12049" />
+          <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -166,13 +165,13 @@
       <usages-collector id="statistics.spring.boot.mvc.usages" />
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="35" />
+          <entry key="JAVA" value="42" />
           <entry key="PLAIN_TEXT" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="35" />
+          <entry key="java" value="42" />
           <entry key="out" value="4" />
           <entry key="run" value="6" />
           <entry key="txt" value="8" />
@@ -180,7 +179,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="9678" />
+          <entry key="dummy" value="3" />
+          <entry key="java" value="12049" />
         </counts>
       </usages-collector>
     </session>
@@ -188,47 +188,38 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NEU_DataStructure_Experiment_EU_Travelling/src/City.java">
+        <entry file="file://$PROJECT_DIR$/NEU_DataStructure_Course_Design/src/carManagement/Parking_lot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="15" column="21" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="15" selection-end-column="21" />
+            <state relative-caret-position="552">
+              <caret line="88" column="10" selection-start-line="88" selection-start-column="10" selection-end-line="88" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NEU_DataStructure_Experiment_EU_Travelling/src/Service.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="36" column="15" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="15" />
-              <folding>
-                <element signature="e#704#705#0" expanded="true" />
-                <element signature="e#735#736#0" expanded="true" />
+                <element signature="e#373#374#0" expanded="true" />
+                <element signature="e#407#408#0" expanded="true" />
+                <element signature="e#553#554#0" expanded="true" />
+                <element signature="e#575#576#0" expanded="true" />
+                <element signature="e#1665#1666#0" expanded="true" />
+                <element signature="e#1697#1698#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/NEU_DataStructure_Course_Design/src/carManagement/Parking.java">
+        <entry file="file://$PROJECT_DIR$/NEU_DataStructure_Course_Design/src/carManagement/CarStack.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="684">
+              <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#257#258#0" expanded="true" />
+                <element signature="e#295#296#0" expanded="true" />
+                <element signature="e#390#391#0" expanded="true" />
+                <element signature="e#421#422#0" expanded="true" />
+                <element signature="e#659#660#0" expanded="true" />
+                <element signature="e#682#683#0" expanded="true" />
+                <element signature="e#1265#1266#0" expanded="true" />
+                <element signature="e#1297#1298#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NEU_DataStructure_Course_Design/src/Graph.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -236,8 +227,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NEU_DataStructure_Course_Design/src/Calculate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
+            <state relative-caret-position="38">
+              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
               <folding>
                 <element signature="e#58#59#0" expanded="true" />
                 <element signature="e#79#80#0" expanded="true" />
@@ -247,10 +238,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NEU_DataStructure_Course_Design/src/Road.java">
+        <entry file="file://$PROJECT_DIR$/NEU_DataStructure_Course_Design/src/Graph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="13" selection-start-column="13" selection-end-column="13" />
+            <state relative-caret-position="57">
+              <caret line="3" column="66" selection-start-line="3" selection-start-column="66" selection-end-line="3" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -267,8 +258,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NEU_DataStructure_Course_Design/src/carManagement/Car.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="190">
+              <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+              <folding>
+                <element signature="e#142#143#0" expanded="true" />
+                <element signature="e#171#172#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -303,10 +298,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>System.out.println</find>
-      <find>index</find>
-      <find>AnyType</find>
-      <find>setNext</find>
       <find>add</find>
       <find>End node</find>
       <find>End</find>
@@ -333,6 +324,10 @@
       <find>services</find>
       <find>notRelax</find>
       <find>int</find>
+      <find>pop</find>
+      <find>@Override</find>
+      <find>E</find>
+      <find>size</find>
     </findStrings>
     <replaceStrings>
       <replace>int</replace>
@@ -357,6 +352,7 @@
       <replace>adj</replace>
       <replace>notKnown</replace>
       <replace>floa</replace>
+      <replace>Car</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -364,6 +360,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/NEU_DataStructure_Experiment_EU_Travelling/src/City.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/NEU_DataStructure_Course_Design/src/carManagement/CarStack.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/Tree_Exercises/src/BinarySearchTree.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/NEU_DataStructure_Experiment_Print_Queue/src/Queue_NotPriority.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/Linked_List_Exercises/src/SingleLinkedListWithHeader.java" root0="SKIP_INSPECTION" />
@@ -375,10 +372,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Stack_Exercises/src/src/Ex3_21_Valid_Symbol_Check.java" />
-        <option value="$PROJECT_DIR$/Sequence_List_Exercises/src/EffectiveStringIndex.java" />
-        <option value="$PROJECT_DIR$/Linked_List_Exercises/src/SingleLinkedList_OnlyHead.java" />
-        <option value="$PROJECT_DIR$/Sequence_List_Exercises/src/MySequenceList.java" />
         <option value="$PROJECT_DIR$/Linked_List_Exercises/src/MyLinkedList.java" />
         <option value="$PROJECT_DIR$/Linked_List_Exercises/src/SingleLinkedListWithHeader.java" />
         <option value="$PROJECT_DIR$/Stack_Exercises/Stack_Exercises/src/Ex3_21_Valid_Symbol_Check.java" />
@@ -423,9 +416,13 @@
         <option value="$PROJECT_DIR$/NEU_DataStructure_Course_Design/src/Map.java" />
         <option value="$PROJECT_DIR$/NEU_DataStructure_Course_Design/src/Road.java" />
         <option value="$PROJECT_DIR$/NEU_DataStructure_Course_Design/src/Scenery.java" />
-        <option value="$PROJECT_DIR$/NEU_DataStructure_Course_Design/src/Graph.java" />
-        <option value="$PROJECT_DIR$/NEU_DataStructure_Course_Design/src/Calculate.java" />
         <option value="$PROJECT_DIR$/NEU_DataStructure_Course_Design/src/carManagement/Parking.java" />
+        <option value="$PROJECT_DIR$/NEU_DataStructure_Course_Design/src/carManagement/LinkedStack.java" />
+        <option value="$PROJECT_DIR$/NEU_DataStructure_Course_Design/src/carManagement/Car.java" />
+        <option value="$PROJECT_DIR$/NEU_DataStructure_Course_Design/src/Calculate.java" />
+        <option value="$PROJECT_DIR$/NEU_DataStructure_Course_Design/src/Graph.java" />
+        <option value="$PROJECT_DIR$/NEU_DataStructure_Course_Design/src/carManagement/CarStack.java" />
+        <option value="$PROJECT_DIR$/NEU_DataStructure_Course_Design/src/carManagement/Parking_lot.java" />
       </list>
     </option>
   </component>
@@ -442,7 +439,7 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
     <option name="width" value="1390" />
     <option name="height" value="1756" />
@@ -453,8 +450,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -486,13 +481,15 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/54234/Documents/GitHub/Data_Structure_Exercises_Java/Sequence_List_Exercises/src/List_unique_and_merge_by_basic_operate.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543895361464" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544004308600" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/NEU_DataStructure_Course_Design" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -502,17 +499,17 @@
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="Ex1_Print_Queue" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\54234\Documents\GitHub\Data_Structure_Exercises_Java\NEU_DataStructure_Experiment\src" />
       <recent name="C:\Users\54234\Documents\GitHub\Data_Structure_Exercises_Java\NEU_DataStructure_Experiment" />
       <recent name="C:\Users\54234\Documents\GitHub\JavaWebAppDemo\web\WEB-INF\classes" />
       <recent name="C:\Users\54234\Documents\GitHub\JavaWebAppDemo\web\JSPs" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Ex1_Print_Queue" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -527,13 +524,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.RailSystem">
+  <component name="RunManager" selected="Application.Parking_lot">
     <configuration name="Fifo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Fifo" />
       <module name="NEU_DataStructure_Experiment_Print_Queue" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Parking_lot" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="carManagement.Parking_lot" />
+      <module name="NEU_DataStructure_Course_Design" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="carManagement.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -557,19 +567,6 @@
     <configuration name="RailSystem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="RailSystem" />
       <module name="NEU_DataStructure_Experiment_EU_Travelling" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Simulator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Simulator" />
-      <module name="NEU_DataStructure_Experiment_Print_Queue" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value=".*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -657,18 +654,18 @@
     <list>
       <item itemvalue="Tomcat Server.Tomcat 9.0.11" />
       <item itemvalue="Application.Queue_NotPriority" />
-      <item itemvalue="Application.Simulator" />
       <item itemvalue="Application.Fifo" />
       <item itemvalue="Application.Small_First" />
       <item itemvalue="Application.RailSystem" />
+      <item itemvalue="Application.Parking_lot" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Parking_lot" />
         <item itemvalue="Application.RailSystem" />
         <item itemvalue="Application.Small_First" />
         <item itemvalue="Application.Fifo" />
         <item itemvalue="Application.Queue_NotPriority" />
-        <item itemvalue="Application.Simulator" />
       </list>
     </recent_temporary>
   </component>
@@ -744,11 +741,12 @@
       <workItem from="1543314543796" duration="6932000" />
       <workItem from="1543765658942" duration="3373000" />
       <workItem from="1543892250641" duration="3360000" />
+      <workItem from="1543989123439" duration="10451000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="306244000" />
+    <option name="totallyTimeSpent" value="316695000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -760,9 +758,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-5" y="0" width="695" height="878" extended-state="0" />
+    <frame x="-6" y="-6" width="1381" height="885" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.493007" weight="0.54160124" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.493007" visible="true" weight="0.12547241" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -772,14 +770,14 @@
       <window_info id="Web" order="7" sideWeight="0.506993" side_tool="true" weight="0.61069834" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32841823" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4996421" weight="0.2761394" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39575034" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4996421" weight="0.27622843" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39176628" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32934928" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5003579" side_tool="true" weight="0.32917705" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.3240372" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.32270917" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Application Servers" order="12" weight="0.33167082" />
@@ -855,6 +853,12 @@
           <properties />
           <option name="timeStamp" value="20" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/NEU_DataStructure_Course_Design/src/carManagement/Parking_lot.java</url>
+          <line>90</line>
+          <properties />
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
@@ -862,14 +866,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Stack_Exercises/Stack_Exercises/src/Ex3_23_infix_to_postfix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NEU_DataStructure_Experiment/arbitrary.out" />
     <entry file="file://$USER_HOME$/Desktop/数据结构实验/Experiment 1/arbitrary.run" />
     <entry file="file://$PROJECT_DIR$/Tree_Exercises/src/BinTreeInSequenceList.java" />
     <entry file="file://$PROJECT_DIR$/Tree_Exercises/src/BinarySearchTree.java">
@@ -927,13 +923,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/NEU_DataStructure_Experiment/src/Queue.java" />
-    <entry file="file://$PROJECT_DIR$/NEU_DataStructure_Experiment_Print_Queue/src/Queue_NotPriority.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="39" column="14" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/arbitrary.run">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -1030,13 +1019,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/util/LinkedList.java" />
     <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/util/HashMap.java" />
     <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/util/PriorityQueue.java" />
     <entry file="file://$PROJECT_DIR$/NEU_DataStructure_Experiment_EU_Travelling/src/NewService.java" />
     <entry file="file://$PROJECT_DIR$/NEU_DataStructure_Experiment_EU_Travelling/src/NewGraph.java" />
     <entry file="file://$PROJECT_DIR$/NEU_DataStructure_Experiment_EU_Travelling/src/NewCity.java" />
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/util/Stack.java" />
+    <entry file="file://$PROJECT_DIR$/NEU_DataStructure_Experiment_EU_Travelling/src/City.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="15" column="21" selection-start-line="11" selection-start-column="3" selection-end-line="15" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NEU_DataStructure_Experiment_EU_Travelling/src/Service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="36" column="15" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="15" />
+          <folding>
+            <element signature="e#704#705#0" expanded="true" />
+            <element signature="e#735#736#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NEU_DataStructure_Course_Design/src/Road.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -1051,19 +1066,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NEU_DataStructure_Course_Design/src/Road.java">
+    <entry file="file://$PROJECT_DIR$/NEU_DataStructure_Experiment_Print_Queue/src/Queue_NotPriority.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        <state relative-caret-position="513">
+          <caret line="39" column="14" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NEU_DataStructure_Experiment_EU_Travelling/src/City.java">
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/util/Stack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="15" column="21" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="15" selection-end-column="21" />
+        <state relative-caret-position="378">
+          <caret line="129" column="28" selection-start-line="129" selection-start-column="28" selection-end-line="129" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/util/LinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="803" column="16" selection-start-line="803" selection-start-column="13" selection-end-line="803" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NEU_DataStructure_Experiment_EU_Travelling/src/RailSystem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="62" column="25" lean-forward="true" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#load_services#0;class#RailSystem#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/util/Queue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1064">
+          <caret line="137" column="17" selection-start-line="137" selection-start-column="17" selection-end-line="137" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NEU_DataStructure_Course_Design/src/carManagement/Parking_lot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="88" column="10" selection-start-line="88" selection-start-column="10" selection-end-line="88" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#373#374#0" expanded="true" />
+            <element signature="e#407#408#0" expanded="true" />
+            <element signature="e#553#554#0" expanded="true" />
+            <element signature="e#575#576#0" expanded="true" />
+            <element signature="e#1665#1666#0" expanded="true" />
+            <element signature="e#1697#1698#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1075,38 +1128,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NEU_DataStructure_Experiment_EU_Travelling/src/RailSystem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="62" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NEU_DataStructure_Experiment_EU_Travelling/src/Service.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="36" column="15" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="15" />
-          <folding>
-            <element signature="e#704#705#0" expanded="true" />
-            <element signature="e#735#736#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/NEU_DataStructure_Course_Design/src/Graph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="57">
+          <caret line="3" column="66" selection-start-line="3" selection-start-column="66" selection-end-line="3" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NEU_DataStructure_Course_Design/src/carManagement/Car.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+          <folding>
+            <element signature="e#142#143#0" expanded="true" />
+            <element signature="e#171#172#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/NEU_DataStructure_Course_Design/src/Calculate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
+        <state relative-caret-position="38">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
           <folding>
             <element signature="e#58#59#0" expanded="true" />
             <element signature="e#79#80#0" expanded="true" />
@@ -1114,19 +1157,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NEU_DataStructure_Course_Design/src/carManagement/Car.java">
+    <entry file="file://$PROJECT_DIR$/NEU_DataStructure_Course_Design/src/carManagement/CarStack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NEU_DataStructure_Course_Design/src/carManagement/Parking.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="684">
+          <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#257#258#0" expanded="true" />
+            <element signature="e#295#296#0" expanded="true" />
+            <element signature="e#390#391#0" expanded="true" />
+            <element signature="e#421#422#0" expanded="true" />
+            <element signature="e#659#660#0" expanded="true" />
+            <element signature="e#682#683#0" expanded="true" />
+            <element signature="e#1265#1266#0" expanded="true" />
+            <element signature="e#1297#1298#0" expanded="true" />
           </folding>
         </state>
       </provider>

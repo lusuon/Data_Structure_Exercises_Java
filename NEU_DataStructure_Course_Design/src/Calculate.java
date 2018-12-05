@@ -1,8 +1,9 @@
 public class Calculate {
     public int[][] createMatrix(){
-        return
+        return null;
     }
 
+    /*
     public sort(String mode){
         case(mode.equals())://欢迎度
         case()://岔路数
@@ -11,4 +12,5 @@ public class Calculate {
     }
 
     public String CreatTourSortGraph(Graph graph)
+    */
 }

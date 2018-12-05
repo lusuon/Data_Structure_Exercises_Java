@@ -1,16 +1,21 @@
 package carManagement;
 
 public class Car {
-    String number;
+    int number;
     int arrive;
     int leave;
-    String where;
 
-    public String getNumber() {
+    public Car(int n,int a,int l){
+        this.number = n;
+        this.arrive = a;
+        this.leave = l;
+    }
+
+    public int getNumber() {
         return number;
     }
 
-    public void setNumber(String number) {
+    public void setNumber(int number) {
         this.number = number;
     }
 
@@ -39,8 +44,4 @@ public class Car {
         return  fee*(leave-arrive);
     }
 
-    @Override
-    public String toString() {
-        return (where.equals("park")?"The car is in the park":"The car is in the path")+"Location:";
-    }
 }
