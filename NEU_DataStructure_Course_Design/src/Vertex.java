@@ -1,11 +1,11 @@
 import java.util.LinkedList;
 
-public class Scenery {
+public class Vertex {
     private int popularity ;
     private String name;
-    private LinkedList<Road> adj;//adj list
+    private LinkedList<Edge> adj;//adj list
     private boolean known;//the status of the shortest path
-    private Scenery path ;//the former of shortest path
+    private Vertex path ;//the former of shortest path
     private int dist;
 
 
