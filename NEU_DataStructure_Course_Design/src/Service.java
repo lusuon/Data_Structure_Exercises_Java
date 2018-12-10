@@ -4,13 +4,11 @@
  */
 
 public class Service {
-    private City start;
     private City goal;
     private int fee;
     private int distance;
 
-    public Service(City s,City g,int f, int d){
-        this.start = s;
+    public Service(City g,int f, int d){
         this.distance = d;
         this.fee = f;
         this.goal = g;

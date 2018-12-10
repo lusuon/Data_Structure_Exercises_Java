@@ -12,7 +12,7 @@ public class RailSystem {
         return cityList;
     }
     public HashMap<String, City> load_services() throws IOException {
-        String pathname = "services.txt";
+        String pathname = "services_change.txt";
         File filename = new File(pathname);
         InputStreamReader reader = new InputStreamReader(new FileInputStream(filename));
         BufferedReader br = new BufferedReader(reader);
@@ -45,9 +45,10 @@ public class RailSystem {
                     cityList.put(end, toBeAdd);
                 }
             }
-
-            cityList.get(start).getAdj().add(new Service(cityList.get(start),cityList.get(end),fare,distance));
-            cityList.get(end).getAdj().add(new Service(cityList.get(end),cityList.get(start),fare,distance));
+            Service s1 = new Service(cityList.get(end),fare,distance);
+            Service s2 = new Service(cityList.get(start),fare,distance);
+            cityList.get(start).getAdj().add(s1);
+            cityList.get(end).getAdj().add(s2);
             line = br.readLine();
         }
             return cityList;
@@ -60,6 +61,17 @@ public class RailSystem {
             entry.getValue().setPath(null);
         }
     }
+
+    public void OutputGraph(HashMap<String,City> cityList){
+        for (Map.Entry<String,City> entry:cityList.entrySet()){
+            System.out.println(entry.getKey()+":");
+            for (Service s:entry.getValue().getAdj()) {
+                System.out.println("\t"+String.format("to:%s,fee:%d,distance:%d",s.getGoal().getName(),s.getFee(),s.getDistance()));
+            }
+        }
+    }
+
+
     public String recover_route(HashMap<String,City> cityList,String start,String end){
         int distance = 0;
         City startCity = cityList.get(start);
@@ -130,6 +142,9 @@ public class RailSystem {
         for (Map.Entry<String,City> entry:cityList.entrySet()){
             System.out.print(entry.getValue().getName()+",");
         }
+        rs.OutputGraph(cityList);
+
+
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String start = null;
@@ -137,7 +152,7 @@ public class RailSystem {
         System.out.println("\nEnter the start:");
         start = br.readLine();
         System.out.println("Enter the goal:");
-        end = br.readLine();
+        end =  br.readLine();
         rs.calc_route(cityList,start);
         System.out.println(rs.recover_route(cityList,start,end));
     }
