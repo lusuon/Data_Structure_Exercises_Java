@@ -6,26 +6,21 @@ import java.util.LinkedList;
  *
  */
 
-public class City implements Comparable{
+public class Scenery implements Comparable{
     private String name;
-    private LinkedList<Service> adj;//adj list
+    private LinkedList<Road> adj;//adj list
     private boolean known;//the status of the shortest path
-    private City path ;//the former of shortest path
+    private Scenery path ;//the former of shortest path
     private int dist;
 
-    public City(String n){
+    public Scenery(String n){
         this.name = n;
-        this.adj = new LinkedList<Service>();
-        /*
-        this.known = false;
-        this.path= null;
-        this.dist= Integer.MAX_VALUE;
-        */
+        this.adj = new LinkedList<Road>();
     }
 
     
     public int getFee(String cityName){
-        for (Service s:adj) {
+        for (Road s:adj) {
             if(s.getGoal().equals(name)) return s.getFee();
         }
         return -1;
@@ -35,7 +30,7 @@ public class City implements Comparable{
         return name;
     }
 
-    public LinkedList<Service> getAdj() {
+    public LinkedList<Road> getAdj() {
         return adj;
     }
 
@@ -43,7 +38,7 @@ public class City implements Comparable{
         this.name = name;
     }
 
-    public void setAdj(LinkedList<Service> adj) {
+    public void setAdj(LinkedList<Road> adj) {
         this.adj = adj;
     }
 
@@ -53,10 +48,10 @@ public class City implements Comparable{
     public void setKnown(boolean known) {
         this.known = known;
     }
-    public City getPath() {
+    public Scenery getPath() {
         return path;
     }
-    public void setPath(City path) {
+    public void setPath(Scenery path) {
         this.path = path;
     }
     public int getDist() {
@@ -68,13 +63,13 @@ public class City implements Comparable{
 
     @Override
     public int compareTo(Object o) {
-        City otherCity = (City) o;
+        Scenery otherScenery = (Scenery) o;
         /*
-        if (this.getDist()-otherCity.getDist()<0) return -1;
-        else if(this.getDist()-otherCity.getDist()>0) return 1;
+        if (this.getDist()-otherScenery.getDist()<0) return -1;
+        else if(this.getDist()-otherScenery.getDist()>0) return 1;
         else return 0;
         */
-        return this.getDist()-otherCity.getDist();
+        return this.getDist()- otherScenery.getDist();
     }
 
 }

@@ -3,12 +3,12 @@
  * This class contains public data members for a destination city, a fee, and a distance. 
  */
 
-public class Service {
-    private City goal;
+public class Road {
+    private Scenery goal;
     private int fee;
     private int distance;
 
-    public Service(City g,int f, int d){
+    public Road(Scenery g, int f, int d){
         this.distance = d;
         this.fee = f;
         this.goal = g;
@@ -16,12 +16,12 @@ public class Service {
 
 
 
-    public City getGoal() {
+    public Scenery getGoal() {
         return goal;
     }
 
     public void setGoal(String goal) {
-        this.goal = new City(goal);
+        this.goal = new Scenery(goal);
     }
 
     public int getFee() {
