@@ -7,7 +7,7 @@ import java.util.*;
 
 public class RailSystem {
     private HashMap<String,City> cityList = new HashMap<>();   //图
-
+    private ArrayList<City> cities = new ArrayList<>(); //
     public HashMap<String, City> getCityList() {
         return cityList;
     }
@@ -38,11 +38,13 @@ public class RailSystem {
                     added.add(start);
                     toBeAdd = new City(start);
                     cityList.put(start, toBeAdd);
+                    cities.add(toBeAdd);
                 }
                 if (!added.contains(end)) {
                     added.add(end);
                     toBeAdd = new City(end);
                     cityList.put(end, toBeAdd);
+                    cities.add(toBeAdd);
                 }
             }
             Service s1 = new Service(cityList.get(end),fare,distance);
@@ -69,6 +71,41 @@ public class RailSystem {
                 System.out.println("\t"+String.format("to:%s,fee:%d,distance:%d",s.getGoal().getName(),s.getFee(),s.getDistance()));
             }
         }
+    }
+
+    public int[][] OutputMatrix(HashMap<String,City> cityList){
+        //遍历邻接表，无法get到则输出32767
+        //如何处理下表与地名的对应，考虑建立ArrayList，下标映射
+        System.out.println("initalizing the matrix");
+
+        // 初始化数组，全32767
+        int[][] matrix = new int[cityList.size()][cityList.size()];
+        for (int[] row:matrix) {
+            for (int column:row) {
+                column = 32767;
+            }
+        }
+
+
+        //第一行：列名
+        System.out.print("\t");
+
+        for (City city:cities) {
+            System.out.print(city.getName()+"\t");
+        }
+        System.out.println("");
+        for (int i=0;i<cities.size();i++){
+            City current = cities.get(i);
+            for (Service s:current.getAdj()) {
+                matrix[i][cities.indexOf(s.getGoal())] = s.getDistance();
+            }
+            System.out.print(current.getName()+"\t");
+            for (int dist:matrix[i]) {
+                System.out.print(dist+"\t");
+            }
+            System.out.println("");
+        }
+        return matrix;
     }
 
 
@@ -138,14 +175,10 @@ public class RailSystem {
         HashMap<String,City> cityList = rs.load_services();
         rs.reset(cityList);
 
-        System.out.print("We support the following cities:\n");
-        for (Map.Entry<String,City> entry:cityList.entrySet()){
-            System.out.print(entry.getValue().getName()+",");
-        }
-        rs.OutputGraph(cityList);
+        rs.OutputMatrix(cityList);
 
 
-
+        /*
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String start = null;
         String end = null;
@@ -155,6 +188,7 @@ public class RailSystem {
         end =  br.readLine();
         rs.calc_route(cityList,start);
         System.out.println(rs.recover_route(cityList,start,end));
+        */
     }
 }
     
